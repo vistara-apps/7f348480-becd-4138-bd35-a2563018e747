@@ -38,8 +38,8 @@ export function AgentCard({
             <Bot className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h3 className="text-text-primary font-semibold">{agent.name}</h3>
-            <p className="text-text-secondary text-sm">Agent #{agent.agentId.slice(-6)}</p>
+            <h3 className="text-white font-semibold">{agent.name}</h3>
+            <p className="text-gray-300 text-sm">Agent #{agent.agentId.slice(-6)}</p>
           </div>
         </div>
         <StatusBadge status={agent.status} />
@@ -50,9 +50,9 @@ export function AgentCard({
         <div className="metric-card">
           <div className="flex items-center space-x-2 mb-1">
             <TrendingUp className="w-4 h-4 text-green-400" />
-            <span className="text-text-secondary text-xs">Earnings</span>
+            <span className="text-gray-300 text-xs">Earnings</span>
           </div>
-          <p className="text-text-primary font-semibold">
+          <p className="text-white font-semibold">
             {formatEth(agent.performanceMetrics.totalEarnings)}
           </p>
         </div>
@@ -60,14 +60,14 @@ export function AgentCard({
         <div className="metric-card">
           <div className="flex items-center space-x-2 mb-1">
             <Star className="w-4 h-4 text-yellow-400" />
-            <span className="text-text-secondary text-xs">Success Rate</span>
+            <span className="text-gray-300 text-xs">Success Rate</span>
           </div>
-          <p className="text-text-primary font-semibold">{successRate}%</p>
+          <p className="text-white font-semibold">{successRate}%</p>
         </div>
       </div>
 
       {/* Stats */}
-      <div className="flex items-center justify-between text-sm text-text-secondary">
+      <div className="flex items-center justify-between text-sm text-gray-300">
         <span>{formatNumber(agent.performanceMetrics.totalBountiesCompleted)} completed</span>
         <span>⭐ {agent.performanceMetrics.rating.toFixed(1)}</span>
       </div>

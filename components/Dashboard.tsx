@@ -134,37 +134,37 @@ export function Dashboard() {
       <div className="grid grid-cols-3 gap-3">
         <div className="metric-card text-center">
           <TrendingUp className="w-5 h-5 text-green-400 mx-auto mb-1" />
-          <p className="text-text-primary font-semibold text-sm">
+          <p className="text-white font-semibold text-sm">
             {formatEth(totalEarnings)}
           </p>
-          <p className="text-text-secondary text-xs">Total Earnings</p>
+          <p className="text-gray-300 text-xs">Total Earnings</p>
         </div>
         
         <div className="metric-card text-center">
           <Package className="w-5 h-5 text-blue-400 mx-auto mb-1" />
-          <p className="text-text-primary font-semibold text-sm">
+          <p className="text-white font-semibold text-sm">
             {formatNumber(totalBounties)}
           </p>
-          <p className="text-text-secondary text-xs">Completed</p>
+          <p className="text-gray-300 text-xs">Completed</p>
         </div>
         
         <div className="metric-card text-center">
           <Bot className="w-5 h-5 text-purple-400 mx-auto mb-1" />
-          <p className="text-text-primary font-semibold text-sm">
+          <p className="text-white font-semibold text-sm">
             {activeAgents}
           </p>
-          <p className="text-text-secondary text-xs">Active Agents</p>
+          <p className="text-gray-300 text-xs">Active Agents</p>
         </div>
       </div>
 
       {/* Tab Navigation */}
-      <div className="flex space-x-1 bg-surface bg-opacity-20 rounded-lg p-1">
+      <div className="flex space-x-1 bg-gray-800 bg-opacity-20 rounded-lg p-1">
         <button
           onClick={() => setActiveTab('bounties')}
           className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors duration-200 ${
             activeTab === 'bounties'
               ? 'bg-purple-500 text-white'
-              : 'text-text-secondary hover:text-text-primary'
+              : 'text-gray-300 hover:text-white'
           }`}
         >
           Bounties ({bounties.length})
@@ -174,7 +174,7 @@ export function Dashboard() {
           className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors duration-200 ${
             activeTab === 'agents'
               ? 'bg-purple-500 text-white'
-              : 'text-text-secondary hover:text-text-primary'
+              : 'text-gray-300 hover:text-white'
           }`}
         >
           Agents ({agents.length})
@@ -185,7 +185,7 @@ export function Dashboard() {
       {activeTab === 'bounties' && (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-text-primary">
+            <h2 className="text-lg font-semibold text-white">
               Available Bounties
             </h2>
             <PrimaryButton className="text-sm px-4 py-2">
@@ -211,7 +211,7 @@ export function Dashboard() {
       {activeTab === 'agents' && (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-text-primary">
+            <h2 className="text-lg font-semibold text-white">
               Your Agents
             </h2>
             <PrimaryButton onClick={handleCreateAgent} className="text-sm px-4 py-2">
