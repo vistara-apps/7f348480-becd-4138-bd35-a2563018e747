@@ -10,7 +10,7 @@
     "subtitle": "Built with Zara",
     "description": "BaseShip Agents is a Base Mini App built with Zara.",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://7f348480becd4138bd35a2563018e747-6m8f.vercel.app",
+    "homeUrl": "https://7f348480becd4138bd35a2563018e747-6rgr.vercel.app",
     "splashImageUrl": "https://7f348480becd4138bd35a2563018e747-6m8f.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
     "heroImageUrl": "https://7f348480becd4138bd35a2563018e747-6m8f.vercel.app/image.png",
@@ -25,6 +25,6 @@
       "miniapp",
       "onchainkit"
     ],
-    "webhookUrl": "https://7f348480becd4138bd35a2563018e747-6m8f.vercel.app/api/webhook"
+    "webhookUrl": "https://7f348480becd4138bd35a2563018e747-6rgr.vercel.app/api/webhook"
   }
 }
