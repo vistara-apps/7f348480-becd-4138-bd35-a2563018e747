@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: 'Automate your shipping bounties on Base',
   keywords: ['Base', 'shipping', 'bounties', 'automation', 'agents'],
   authors: [{ name: 'BaseShip Team' }],
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

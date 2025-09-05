@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary: hsl(210, 70%, 50%);
+    --accent: hsl(130, 60%, 55%);
+    --bg: hsl(220, 20%, 10%);
+    --surface: hsl(220, 20%, 15%);
+    --text-primary: hsl(0, 0%, 95%);
+    --text-secondary: hsl(0, 0%, 70%);
+    --radius: 8px;
+  }
+  
   * {
     @apply border-gray-700;
   }
   
   body {
-    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-text-primary min-h-screen;
+    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white min-h-screen;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-surface bg-opacity-20 backdrop-blur-sm border border-white border-opacity-10 rounded-lg shadow-card;
+    @apply bg-gray-800 bg-opacity-20 backdrop-blur-sm border border-white border-opacity-10 rounded-lg shadow-lg;
   }
   
   .btn-primary {
@@ -23,7 +33,7 @@
   }
   
   .btn-secondary {
-    @apply bg-surface bg-opacity-40 text-text-primary px-6 py-3 rounded-lg font-medium hover:bg-opacity-60 transition-all duration-200 border border-white border-opacity-20;
+    @apply bg-gray-800 bg-opacity-40 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-60 transition-all duration-200 border border-white border-opacity-20;
   }
   
   .metric-card {

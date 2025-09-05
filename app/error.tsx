@@ -23,10 +23,10 @@ export default function Error({
         </div>
         
         <div>
-          <h2 className="text-xl font-bold text-text-primary mb-2">
+          <h2 className="text-xl font-bold text-white mb-2">
             Something went wrong!
           </h2>
-          <p className="text-text-secondary text-sm">
+          <p className="text-gray-300 text-sm">
             We encountered an error while loading BaseShip Agents. Please try again.
           </p>
         </div>
