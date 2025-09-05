@@ -20,7 +20,7 @@ export function WalletConnection() {
         </div>
         <div>
           <h1 className="text-xl font-bold text-gradient">BaseShip Agents</h1>
-          <p className="text-text-secondary text-sm">Automate your shipping bounties</p>
+          <p className="text-gray-400 text-sm">Automate your shipping bounties</p>
         </div>
       </div>
       

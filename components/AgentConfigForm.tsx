@@ -36,12 +36,12 @@ export function AgentConfigForm({
       <div className="glass-card p-6 w-full max-w-md space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-text-primary">
+          <h2 className="text-xl font-semibold text-white">
             Configure Agent
           </h2>
           <button
             onClick={onClose}
-            className="text-text-secondary hover:text-text-primary transition-colors duration-200"
+            className="text-gray-400 hover:text-white transition-colors duration-200"
           >
             <X className="w-5 h-5" />
           </button>
@@ -51,7 +51,7 @@ export function AgentConfigForm({
         <div className="space-y-4">
           {/* Max Concurrent Bounties */}
           <div>
-            <label className="block text-text-secondary text-sm mb-2">
+            <label className="block text-gray-400 text-sm mb-2">
               Max Concurrent Bounties
             </label>
             <input
@@ -63,13 +63,13 @@ export function AgentConfigForm({
                 ...config,
                 maxConcurrentBounties: parseInt(e.target.value) || 1
               })}
-              className="w-full bg-surface bg-opacity-40 border border-white border-opacity-20 rounded-lg px-3 py-2 text-text-primary focus:outline-none focus:border-purple-400"
+              className="w-full bg-gray-800 bg-opacity-40 border border-white border-opacity-20 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-purple-400"
             />
           </div>
 
           {/* Min Reward Threshold */}
           <div>
-            <label className="block text-text-secondary text-sm mb-2">
+            <label className="block text-gray-400 text-sm mb-2">
               Min Reward Threshold (ETH)
             </label>
             <input
@@ -81,13 +81,13 @@ export function AgentConfigForm({
                 ...config,
                 minRewardThreshold: e.target.value
               })}
-              className="w-full bg-surface bg-opacity-40 border border-white border-opacity-20 rounded-lg px-3 py-2 text-text-primary focus:outline-none focus:border-purple-400"
+              className="w-full bg-gray-800 bg-opacity-40 border border-white border-opacity-20 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-purple-400"
             />
           </div>
 
           {/* Auto Accept */}
           <div className="flex items-center justify-between">
-            <label className="text-text-secondary text-sm">
+            <label className="text-gray-400 text-sm">
               Auto Accept Bounties
             </label>
             <button
@@ -110,7 +110,7 @@ export function AgentConfigForm({
           {/* Advanced Settings */}
           {variant === 'advanced' && (
             <div>
-              <label className="block text-text-secondary text-sm mb-2">
+              <label className="block text-gray-400 text-sm mb-2">
                 Preferred Categories
               </label>
               <div className="flex flex-wrap gap-2">
@@ -126,7 +126,7 @@ export function AgentConfigForm({
                     className={`px-3 py-1 rounded-full text-sm transition-colors duration-200 ${
                       config.preferredCategories.includes(category)
                         ? 'bg-purple-500 text-white'
-                        : 'bg-surface bg-opacity-40 text-text-secondary border border-white border-opacity-20'
+                        : 'bg-gray-800 bg-opacity-40 text-gray-400 border border-white border-opacity-20'
                     }`}
                   >
                     {category}
