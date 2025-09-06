@@ -71,6 +71,6 @@ export interface AgentCardProps {
 }
 
 export interface StatusBadgeProps {
-  status: 'active' | 'completed' | 'failed' | 'idle' | 'busy' | 'offline';
-  variant?: 'active' | 'completed' | 'failed';
+  status: 'active' | 'assigned' | 'completed' | 'cancelled' | 'failed' | 'idle' | 'busy' | 'offline';
+  variant?: 'active' | 'completed' | 'failed' | 'default' | 'large';
 }

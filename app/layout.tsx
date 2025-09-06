@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: 'Automate your shipping bounties on Base',
   keywords: ['Base', 'shipping', 'bounties', 'automation', 'agents'],
   authors: [{ name: 'BaseShip Team' }],
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

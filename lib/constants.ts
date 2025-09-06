@@ -26,10 +26,20 @@ export const STATUS_CONFIG = {
     color: 'text-green-400',
     bgColor: 'bg-green-500',
   },
+  assigned: {
+    label: 'Assigned',
+    color: 'text-orange-400',
+    bgColor: 'bg-orange-500',
+  },
   completed: {
     label: 'Completed',
     color: 'text-blue-400',
     bgColor: 'bg-blue-500',
+  },
+  cancelled: {
+    label: 'Cancelled',
+    color: 'text-gray-400',
+    bgColor: 'bg-gray-500',
   },
   failed: {
     label: 'Failed',

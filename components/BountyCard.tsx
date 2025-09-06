@@ -43,7 +43,7 @@ export function BountyCard({
       <div className="flex items-start justify-between">
         <div className="flex items-center space-x-2">
           <Package className="w-5 h-5 text-purple-400" />
-          <span className="text-sm text-text-secondary">
+          <span className="text-sm text-gray-400">
             Bounty #{bounty.bountyId.slice(-6)}
           </span>
         </div>
@@ -52,7 +52,7 @@ export function BountyCard({
 
       {/* Description */}
       <div>
-        <p className="text-text-primary font-medium mb-2">
+        <p className="text-white font-medium mb-2">
           {bounty.description}
         </p>
       </div>
@@ -63,7 +63,7 @@ export function BountyCard({
           <DollarSign className="w-4 h-4" />
           <span>{formatEth(bounty.rewardAmount)}</span>
         </div>
-        <div className="flex items-center space-x-1 text-text-secondary">
+        <div className="flex items-center space-x-1 text-gray-400">
           <Clock className="w-4 h-4" />
           <span>{formatDuration((Date.now() - bounty.createdAt.getTime()) / (1000 * 60 * 60))} ago</span>
         </div>
