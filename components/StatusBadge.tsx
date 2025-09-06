@@ -6,17 +6,23 @@ import type { StatusBadgeProps } from '@/lib/types';
 
 export function StatusBadge({ 
   status, 
-  variant 
+  variant = 'default'
 }: StatusBadgeProps) {
   const config = STATUS_CONFIG[status];
   
+  const baseClasses = 'px-2 py-1 rounded-full text-xs font-medium border';
+  const sizeClasses = {
+    default: 'text-xs px-2 py-1',
+    large: 'text-sm px-4 py-2',
+  };
+  
+  const statusClasses = `${config.bgColor} bg-opacity-20 ${config.color} border-current border-opacity-30`;
+  
   return (
     <span className={cn(
-      'status-badge',
-      variant === 'active' && 'status-active',
-      variant === 'completed' && 'status-completed',
-      variant === 'failed' && 'status-failed',
-      !variant && `${config.bgColor} bg-opacity-20 ${config.color} border border-current border-opacity-30`
+      baseClasses,
+      variant === 'large' ? sizeClasses.large : sizeClasses.default,
+      statusClasses
     )}>
       {config.label}
     </span>
